@@ -1,6 +1,6 @@
 # Floquidity: AI-Powered DeFi Co-Pilot
 
-![Floquidity Logo](public/assets/images/logo.png)
+![Floquidity Logo](frontend/public/assets/images/logo.png)
 
 ## Overview
 
