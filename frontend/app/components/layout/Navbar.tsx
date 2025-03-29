@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               <Link 
                 href="/dashboard" 
                 className="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 transition-colors duration-300"
@@ -77,13 +77,13 @@ const Navbar: React.FC = () => {
                 <BrainCircuit className="w-5 h-5" />
                 AI Strategies
               </Link>
-              <Link 
+              {/* <Link 
                 href="/card" 
                 className="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 transition-colors duration-300"
               >
                 <CreditCard className="w-5 h-5" />
                 MetaMask Card
-              </Link>
+              </Link> */}
               {isClient && isConnected ? (
                 <div className="flex items-center space-x-2">
                   <span className="bg-[#16213e] px-3 py-2 rounded-full text-sm">
@@ -128,13 +128,13 @@ const Navbar: React.FC = () => {
               <BrainCircuit className="w-5 h-5" />
               AI Strategies
             </Link>
-            <Link 
+            {/* <Link 
               href="/card" 
               className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"
             >
               <CreditCard className="w-5 h-5" />
               MetaMask Card
-            </Link>
+            </Link> */}
             {isClient && isConnected ? (
               <div className="space-y-2">
                 <span className="block bg-[#1a1a2e] text-center px-3 py-2 rounded-md text-sm">

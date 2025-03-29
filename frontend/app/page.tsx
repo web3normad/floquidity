@@ -47,8 +47,8 @@ const Home: React.FC = () => {
           {/* Animated Illustration Placeholder */}
           <div className="hidden md:block relative">
             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 absolute inset-0 rounded-full blur-3xl animate-pulse"></div>
-            <div className="relative z-10 bg-[#16213e]/50 rounded-2xl p-8 backdrop-blur-lg">
-              <div className="space-y-4">
+            <div className="relative  z-10 bg-[#16213e]/50 rounded-2xl p-8 backdrop-blur-lg">
+              <div className=" space-y-4">
                 <div className="flex items-center space-x-4 bg-[#1a1a2e] p-4 rounded-xl">
                   <Globe className="text-cyan-400 w-10 h-10" />
                   <div>
@@ -63,13 +63,13 @@ const Home: React.FC = () => {
                     <p className="text-gray-400 text-sm">Intelligent yield optimization recommendations</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4 bg-[#1a1a2e] p-4 rounded-xl">
+                {/* <div className="flex items-center space-x-4 bg-[#1a1a2e] p-4 rounded-xl">
                   <CreditCard className="text-green-400 w-10 h-10" />
                   <div>
                     <h3 className="font-semibold text-lg">MetaMask Card</h3>
                     <p className="text-gray-400 text-sm">Spend DeFi earnings with smart limits</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-[#16213e] p-6 rounded-2xl hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
               <Zap className="w-12 h-12 text-cyan-400 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Cross-Chain Visibility</h3>
@@ -101,13 +101,13 @@ const Home: React.FC = () => {
                 Leverage AI-powered insights to optimize your yield strategies and maximize portfolio performance.
               </p>
             </div>
-            <div className="bg-[#16213e] p-6 rounded-2xl hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300">
+            {/* <div className="bg-[#16213e] p-6 rounded-2xl hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300">
               <CreditCard className="w-12 h-12 text-green-400 mb-4" />
               <h3 className="text-xl font-semibold mb-3">MetaMask Card Integration</h3>
               <p className="text-gray-400">
                 Set intelligent spending limits based on your DeFi earnings and manage real-world expenses seamlessly.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
