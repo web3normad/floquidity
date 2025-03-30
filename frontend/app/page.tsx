@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           
-          {/* Animated Illustration Placeholder */}
+        
           <div className="hidden md:block relative">
             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 absolute inset-0 rounded-full blur-3xl animate-pulse"></div>
             <div className="relative  z-10 bg-[#16213e]/50 rounded-2xl p-8 backdrop-blur-lg">

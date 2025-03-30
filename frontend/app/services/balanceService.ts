@@ -67,15 +67,14 @@ export async function fetchWalletBalances(address?: Address): Promise<WalletBala
     throw new Error('Wallet address is required');
   }
 
-  // Fetch current ETH price
+ 
   const currentEthPrice = await fetchEthPrice();
 
-  // Mock balances fetching (replace with actual implementation)
+ 
   const balancePromises = SUPPORTED_CHAINS.map(async (chain) => {
     try {
-      // TODO: Replace this with actual balance fetching logic using Viem/Wagmi
-      // For now, we'll use a mock implementation
-      const mockBalance = Math.random() * 0.1; // Random balance between 0 and 0.1 ETH
+      
+      const mockBalance = Math.random() * 0.1; 
       const balanceInUSD = mockBalance * currentEthPrice;
 
       return {
@@ -97,10 +96,10 @@ export async function fetchWalletBalances(address?: Address): Promise<WalletBala
     }
   });
 
-  // Resolve all balance promises
+  
   const balances = await Promise.all(balancePromises);
 
-  // Calculate total wallet value
+ 
   const totalValue = balances.reduce((sum, balance) => sum + balance.balanceInUSD, 0);
 
   return {

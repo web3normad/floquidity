@@ -106,7 +106,7 @@ export const rebalancingService = {
       
    
       const currentValue = asset.amount * asset.allocation;
-      const hypotheticalGains = Math.max(0, currentValue * 0.1);  /
+      const hypotheticalGains = Math.max(0, currentValue * 0.1);  
       
       return total + (hypotheticalGains * CAPITAL_GAINS_TAX_RATE);
     }, 0);
